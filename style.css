@@ -101,6 +101,8 @@ ul {
   outline: none;
   border-radius: 30px;
   color: white;
+  background-color: #000;
+  cursor: pointer;
 }
 
 .user__link:hover {
