@@ -66,7 +66,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              Мальчик заинька, голос ангельский СМОТРЕТЬ ВСЕМ РЖАКА 2007 360
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto veniam voluptatem sed repudiandae perferendis repellendus vero distinctio aut facilis quos reprehenderit atque, velit unde nulla eaque alias natus officiis quaerat!
             </p>
           </div>
         </li>
