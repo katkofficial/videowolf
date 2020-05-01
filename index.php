@@ -5,8 +5,9 @@
   <meta charset="utf-8" />
   <title>Video Wolf</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="normalize.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="shortcut icon" href="/img/site-logo.png" type="image/png" />
 </head>
 
@@ -23,7 +24,7 @@
         <nav class="nav">
           <ul class="menu">
             <li><a class="menu__link" href="">главная</a></li>
-            <li><a class="menu__link" href="">котики</a></li>
+            <li><a class="menu__link" href="pageVideo.php">котики</a></li>
             <li><a class="menu__link" href="">собачки</a></li>
             <li><a class="menu__link" href="">попуги</a></li>
           </ul>
