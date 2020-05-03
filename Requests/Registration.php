@@ -2,9 +2,9 @@
 
 include_once("HTTPDataBaseRequests.php");
 
-$tem = new web\HTTPDataBaseRequests();
+$request = new web\HTTPDataBaseRequests();
 
-$response = $tem->sendRequest(array(
+$response = $request->sendRequest(array(
     "DataBaseRequest" => "Registration"
 ), $_POST);
 

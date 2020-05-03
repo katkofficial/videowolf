@@ -21,12 +21,14 @@ class HTTPDataBaseRequests
     }
 
     //$additionalHeaders as headerName => headerValue
-    public function sendRequest(array $additionalHeaders, array $body, string $method = "POST")
+    public function sendRequest(array $additionalHeaders, array $body = null, string $method = "POST")
     {
         socket_connect($this->clientSocket, $this->ip, $this->port);
 
         $response = "";
-        $body = http_build_query($body);
+        if ($body != null) {
+            $body = http_build_query($body);
+        }
         $request = (new HTTPBuilder())->setRequest($method)->setVersion(1.1)->setHeaders($additionalHeaders)->setHeaders(
             array(
                 "Content-Length" => strlen($body),
@@ -34,7 +36,7 @@ class HTTPDataBaseRequests
                 "Content-type" => "application/x-www-form-urlencoded"
             )
         )->build($body);
-        
+
         socket_send($this->clientSocket, $request, strlen($request), null);
 
         socket_recv($this->clientSocket, $response, responseSize, null);

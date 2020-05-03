@@ -1,13 +1,4 @@
 <?php
-
-/*
-HTTP/1.1 206 Partial Content
-"Content-Range", "bytes " + tem + "-" + to_string(data.size() - 1) + "/" + to_string(totalSize),
-"Content-Type", "video/mp4",
-"Content-Length", data.size(),
-"Accept-Range", "bytes"
-*/
-
 include_once("HTTPStreaming.php");
 
 $tem = new web\HTTPStreaming(apache_request_headers());

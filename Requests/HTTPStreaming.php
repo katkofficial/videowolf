@@ -24,7 +24,7 @@ class HTTPStreaming
     {
         socket_connect($this->clientSocket, $this->ip, $this->port);
 
-        $request = (new HTTPBuilder)->setHeaders($this->headers)->setRequest("Get")->setVersion(1.1);
+        $request = (new HTTPBuilder())->setHeaders($this->headers)->setRequest("GET")->setVersion(1.1);
         $response = "";
         $buffer = "";
 
