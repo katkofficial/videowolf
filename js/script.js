@@ -173,24 +173,24 @@ $(document).ready(function ()
 
 })
 
-// var toggleAuth = (function ()
-// {
-//   var btnAuth = document.querySelector(".reg .toggleAuth");
-//   var btnReg = document.querySelector(".auth .toggleReg");
-//   var popupAuth = document.querySelector(".popup-auth");
-//   var popupReg = document.querySelector(".popup-reg");
+var toggleAuth = (function ()
+{
+  var btnAuth = document.querySelector(".reg .toggleAuth");
+  var btnReg = document.querySelector(".auth .toggleReg");
+  var popupAuth = document.querySelector(".popup-auth");
+  var popupReg = document.querySelector(".popup-reg");
 
-//   btnReg.addEventListener("click", function (e)
-//   {
-//     e.preventDefault();
-//     popupAuth.style.display = "none";
-//     popupReg.style.display = "block";
-//   });
+  btnReg.addEventListener("click", function (e)
+  {
+    e.preventDefault();
+    popupAuth.style.display = "none";
+    popupReg.style.display = "block";
+  });
 
-//   btnAuth.addEventListener("click", function (e)
-//   {
-//     e.preventDefault();
-//     popupAuth.style.display = "block";
-//     popupReg.style.display = "none";
-//   });
-// })();
+  btnAuth.addEventListener("click", function (e)
+  {
+    e.preventDefault();
+    popupAuth.style.display = "block";
+    popupReg.style.display = "none";
+  });
+})();
