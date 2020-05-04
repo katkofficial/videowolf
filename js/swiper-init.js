@@ -8,4 +8,7 @@ var videosSlider = new Swiper(".videos-swiper", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  autoplay: {
+    delay: 5000,
+  },
 });

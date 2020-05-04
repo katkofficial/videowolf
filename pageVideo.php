@@ -43,15 +43,31 @@
         <div class="container">
             <div class="video-container">
                 <div class="video-player__video-block">
-                    <video></video>
-                    <img>
+                    <video id="video" width="860" height="480">
+                        <source  src="video/video.mp4">
+                    </video>
+                    <div class="player">
+                        <div>
+                            <div id="videoTimeMin"></div>
+                            <div id="videoTimeSec"></div>
+                            <progress id="progress" class="player__progress" max="100" value="0"></progress>
+                        </div>
+                        <button id="play">Play</button>
+                        <button id="pause">Pause</button>
+                        <button id="stop">Stop</button>
+                        <button id="fullscreen">Full screen</button>
+                        <button id="faster">Faster</button>
+                        <button id="slower">Slower</button>
+                        <input type="range" id="volume"> volume
+                    </div>
+                    
                     
                 </div>
                 <h2 class="video-player__video-name">Ударил девушку один раз, не будь шакалом,
 добей чтобы не мучалась</h2>
             </div>
         </div>
-        <div class="container">
+        <div class="container slider">
             <div class="videos-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">Slide 1</div>
@@ -69,7 +85,10 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-        </div>  
+            <div class="white-block f"></div> 
+            <div class="white-block s"></div> 
+        </div> 
+        
     </main>
 
 
@@ -81,10 +100,13 @@
             <p class="footer__title">Разработано командой «Туса Джуса»</p>
         </div>
     </footer>
+    
     <script src="js/swiper.min.js"></script>
     <script src="js/swiper-init.js"></script>
     <script src="js/jquery.min.js"></script>
+  
     <script src="js/script.js"></script>
+    
 </body>
 
 </html>

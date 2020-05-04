@@ -368,11 +368,12 @@ ul {
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
+  position: relative;
 }
 .video-player__video-name{
   font-size: 25px;
   color: #000;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   margin-right: auto;
   margin-left: auto;
   max-width: 860px;
@@ -387,3 +388,13 @@ ul {
 .videos-swiper{
   position: relative;
 }
+
+.player{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.player__progress{
+  width: 100%;
+  margin: 0 auto;
