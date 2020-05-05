@@ -1,3 +1,9 @@
+<?php
+
+print("<input type='hidden' id='category' value={$_GET['category']}>");
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -44,7 +50,7 @@
             <div class="video-container">
                 <div class="video-player__video-block">
                     <video id="video" width="860" height="480">
-                        <source  src="video/video.mp4">
+
                     </video>
                     <div class="player">
                         <div>
@@ -60,17 +66,17 @@
                         <button id="slower">Slower</button>
                         <input type="range" id="volume"> volume
                     </div>
-                    
-                    
+
+
                 </div>
                 <h2 class="video-player__video-name">Ударил девушку один раз, не будь шакалом,
-добей чтобы не мучалась</h2>
+                    добей чтобы не мучалась</h2>
             </div>
         </div>
         <div class="container slider">
             <div class="videos-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
+                    <div id="firstVideo" class="swiper-slide">КОТЫ 2020 ПРИКОЛЫ С КОШКАМИ Смешные Коты и Котики 2020 Funny Cats</div>
                     <div class="swiper-slide">Slide 2</div>
                     <div class="swiper-slide">Slide 3</div>
                     <div class="swiper-slide">Slide 4</div>
@@ -81,14 +87,14 @@
                     <div class="swiper-slide">Slide 9</div>
                     <div class="swiper-slide">Slide 10</div>
                 </div>
-                    <!-- Add Arrows -->
+                <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-            <div class="white-block f"></div> 
-            <div class="white-block s"></div> 
-        </div> 
-        
+            <div class="white-block f"></div>
+            <div class="white-block s"></div>
+        </div>
+
     </main>
 
 
@@ -100,13 +106,12 @@
             <p class="footer__title">Разработано командой «Туса Джуса»</p>
         </div>
     </footer>
-    
+
     <script src="js/swiper.min.js"></script>
     <script src="js/swiper-init.js"></script>
     <script src="js/jquery.min.js"></script>
-  
     <script src="js/script.js"></script>
-    
+
 </body>
 
 </html>
