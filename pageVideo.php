@@ -1,6 +1,7 @@
 <?php
 
 print("<input type='hidden' id='category' value={$_GET['category']}>");
+print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
 
 ?>
 
@@ -111,6 +112,27 @@ print("<input type='hidden' id='category' value={$_GET['category']}>");
     <script src="js/swiper-init.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            var categoryId = $("#categoryId").val();
+
+            $.ajax({
+                type: "POST",
+                dataType: "text",
+                url: "Requests/GetVideos.php",
+                data: {
+                    categoryId: categoryId,
+                    tableName: "videos"
+                },
+                success: function(data) {
+                    alert(data);
+                }
+            });
+
+        });
+    </script>
 
 </body>
 

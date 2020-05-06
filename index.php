@@ -24,7 +24,7 @@
         <nav class="nav">
           <ul class="menu">
             <li><a class="menu__link" href="">главная</a></li>
-            <li><a class="menu__link" href="pageVideo.php?category=Котики">котики</a></li>
+            <li><a class="menu__link" href="pageVideo.php?category=Котики&categoryId=1">котики</a></li>
             <li><a class="menu__link" href="">собачки</a></li>
             <li><a class="menu__link" href="">попуги</a></li>
             <li><a class="menu__link" href="Requests/GetCategories.php?tableName=categories">категории</a></li>
