@@ -72,7 +72,15 @@ var speed = 1;
 
 $(document).ready(function ()
 {
-  
+  var btnOpen = document.querySelector(".user__link");
+  var btnClose = document.querySelectorAll(".popup-user .close");
+  var popupUser = document.querySelector(".popup-zlp");
+  var popupAuth = document.querySelector(".popup-auth");
+  var popupReg = document.querySelector(".popup-reg");
+  var overlay = document.querySelector(".overlay");
+
+// НАДО В ОТДЕЛЬНЫЙ ФАЙЛ JS ПЛЕЕРА ЕБАНУТЬ
+// ====================================================
   document.querySelector("#play").addEventListener("click", playV);
   document.querySelector("#pause").addEventListener("click", pauseV);
   document.querySelector("#stop").addEventListener("click", stopV);
@@ -83,17 +91,7 @@ $(document).ready(function ()
   document.querySelector("#progress").addEventListener("click", rewindV);
   video.ontimeupdate = progressUpdate;
 
-
   
-  
-  
-
-  var btnOpen = document.querySelector(".user__link");
-  var btnClose = document.querySelectorAll(".popup-user .close");
-  var popupUser = document.querySelector(".popup-zlp");
-  var popupAuth = document.querySelector(".popup-auth");
-  var popupReg = document.querySelector(".popup-reg");
-  var overlay = document.querySelector(".overlay");
 
   function closePop()
   {

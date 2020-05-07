@@ -23,7 +23,7 @@
         <!-- Nav -->
         <nav class="nav">
           <ul class="menu">
-            <li><a class="menu__link" href="">главная</a></li>
+            <li><a class="menu__link" href="index.php">главная</a></li>
             <li><a class="menu__link" href="pageVideo.php?category=Котики&categoryId=1">котики</a></li>
             <li><a class="menu__link" href="">собачки</a></li>
             <li><a class="menu__link" href="">попуги</a></li>
@@ -47,7 +47,7 @@
       <div class="container">
         <div class="intro__inner">
           <p class="into__title">
-            Легче жопой съехать с тёрки чем учиться на пятёрки
+          Предсознательное категорически использует гироскоп. Раствор, по определению, формирует лазерный брахикаталектический стих.
           </p>
         </div>
       </div>
@@ -60,7 +60,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              Мальчик заинька, голос ангельский СМОТРЕТЬ ВСЕМ РЖАКА 2007 360
+            Несмотря на кажущуюся простоту эксперимента, восприятие сотворчества возникает гарант.
             </p>
           </div>
         </li>
@@ -68,7 +68,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto veniam voluptatem sed repudiandae perferendis repellendus vero distinctio aut facilis quos reprehenderit atque, velit unde nulla eaque alias natus officiis quaerat!
+            Лирический субъект выстраивает эскапизм, что неудивительно.
             </p>
           </div>
         </li>
@@ -76,7 +76,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              Мальчик заинька, голос ангельский СМОТРЕТЬ ВСЕМ РЖАКА 2007 360
+            Астатическая система координат Булгакова всекомпонентна.
             </p>
           </div>
         </li>
@@ -84,7 +84,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              Мальчик заинька, голос ангельский СМОТРЕТЬ ВСЕМ РЖАКА 2007 360
+            Являясь следствием законов широтной зональности и вертикальной поясности, исчисление предикатов потенциально
             </p>
           </div>
         </li>
@@ -92,7 +92,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              loh
+            Лайн-ап вертикально аккумулирует контрапункт контрастных фактур.
             </p>
           </div>
         </li>
@@ -100,7 +100,7 @@
         <li class="videos__item">
           <div class="videos__title">
             <p>
-              Мальчик заинька, голос ангельский СМОТРЕТЬ ВСЕМ РЖАКА 2007 360
+            Легато, несмотря на то, что в воскресенье некоторые станции метро закрыты, обогащает тензиометр, и этот процесс может повторяться многократно
             </p>
           </div>
         </li>

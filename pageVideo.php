@@ -30,7 +30,7 @@ print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
                 <!-- Nav -->
                 <nav class="nav">
                     <ul class="menu">
-                        <li><a class="menu__link" href="">главная</a></li>
+                        <li><a class="menu__link" href="index.php">главная</a></li>
                         <li><a class="menu__link" href="">котики</a></li>
                         <li><a class="menu__link" href="">собачки</a></li>
                         <li><a class="menu__link" href="">попуги</a></li>
@@ -70,8 +70,7 @@ print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
 
 
                 </div>
-                <h2 class="video-player__video-name">Ударил девушку один раз, не будь шакалом,
-                    добей чтобы не мучалась</h2>
+                <h2 class="video-player__video-name">Пирогенный апофиз глазами современников</h2>
             </div>
         </div>
         <div class="container slider">
@@ -127,7 +126,7 @@ print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
                     tableName: "videos"
                 },
                 success: function(data) {
-                    alert(data);
+                    // alert(data);
                 }
             });
 
