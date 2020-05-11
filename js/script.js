@@ -169,20 +169,6 @@ $(document).ready(function ()
 
   });
 
-  $("#firstVideo").click(function() {
-    var name = $("#firstVideo").text();
-    var category = $("#category").val();
-
-    var video = document.querySelector("#video");
-
-    video.setAttribute("src", encodeURI("Requests/Streaming.php?Category=" + category + "&VideoName=" + name));
-    video.setAttribute("type", "video/mp4");
-
-    video.load();
-
-    video.play();
-});
-
 })
 
 var toggleAuth = (function ()

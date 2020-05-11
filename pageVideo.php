@@ -1,10 +1,3 @@
-<?php
-
-print("<input type='hidden' id='category' value={$_GET['category']}>");
-print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
-
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -76,7 +69,7 @@ print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
         <div class="container slider">
             <div class="videos-swiper">
                 <div class="swiper-wrapper">
-                    <div id="firstVideo" class="swiper-slide">КОТЫ 2020 ПРИКОЛЫ С КОШКАМИ Смешные Коты и Котики 2020 Funny Cats</div>
+                    <div class="swiper-slide">Slide 1</div>
                     <div class="swiper-slide">Slide 2</div>
                     <div class="swiper-slide">Slide 3</div>
                     <div class="swiper-slide">Slide 4</div>
@@ -114,8 +107,7 @@ print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
 
     <script>
         $(document).ready(function() {
-
-            var categoryId = $("#categoryId").val();
+            var categoryId = <?php echo $_GET['categoryId']; ?>;
 
             $.ajax({
                 type: "POST",
@@ -126,7 +118,49 @@ print("<input type='hidden' id='categoryId' value={$_GET['categoryId']}>");
                     tableName: "videos"
                 },
                 success: function(data) {
-                    // alert(data);
+                    var slider = $(".swiper-wrapper").children();
+                    var videoNames = Array();
+                    data = String(data);
+
+                    var tem = String();
+
+                    for (var i = 0; i < data.length; i++) {
+
+                        if (data[i] == '&' && data.indexOf("&amp;", i) != i) {
+                            tem = tem.substr(tem.indexOf('=') + 1);
+                            videoNames.push(tem.split("&amp;").join("&"));
+
+                            tem = "";
+                        } else {
+                            tem += data[i];
+                        }
+                    }
+                    tem = tem.substr(tem.indexOf('=') + 1);
+
+                    videoNames.push(tem.split("&amp;").join("&"));
+
+                    var min = videoNames.length < slider.length ? videoNames.length : slider.length;
+
+                    for (var i = 0; i < min; i++) {
+                        slider[i].innerText = videoNames[i];
+                        slider[i].addEventListener("click", function() {
+                            var name = encodeURIComponent($(this).text());
+                            var category = encodeURIComponent("<?php echo $_GET['category']; ?>");
+
+                            console.log(name);
+
+                            var video = document.querySelector("#video");
+                            console.log("Requests/Streaming.php?Category=" + category + "&VideoName=" + name);
+
+                            video.setAttribute("src", "Requests/Streaming.php?Category=" + category + "&VideoName=" + name);
+                            video.setAttribute("type", "video/mp4");
+
+                            video.load();
+
+                            video.play();
+                        });
+                    }
+
                 }
             });
 
