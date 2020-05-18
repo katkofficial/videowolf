@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/player.css" />
     <link rel="shortcut icon" href="/img/site-logo.png" type="image/png" />
 </head>
 
@@ -44,21 +45,30 @@
             <div class="video-container">
                 <div class="video-player__video-block">
                     <video id="video" width="860" height="480">
-
+                        <source src="video.mp4">
                     </video>
                     <div class="player">
-                        <div>
-                            <div id="videoTimeMin"></div>
-                            <div id="videoTimeSec"></div>
-                            <progress id="progress" class="player__progress" max="100" value="0"></progress>
+                        <div class="timer">
+                            <div id="videoTimeMin" class="videoTimeMin">0</div>
+                            <div id="videoTimeSec">0</div>                            
                         </div>
-                        <button id="play">Play</button>
-                        <button id="pause">Pause</button>
-                        <button id="stop">Stop</button>
-                        <button id="fullscreen">Full screen</button>
-                        <button id="faster">Faster</button>
-                        <button id="slower">Slower</button>
-                        <input type="range" id="volume"> volume
+                        <progress id="progress" class="player__progress" max="100" value="0"></progress>
+
+                        <div class="player-buttons">
+                            <div>
+                                <button id="play" class="play"><img src="img/player-icons/play.svg" alt=""></button>
+                                <button id="pause" class="pause"><img src="img/player-icons/pause.svg" alt=""></button>
+                                <button id="stop" class="stop"><img src="img/player-icons/stop.svg" alt=""></button>
+                            </div>
+                            <div>
+                                <button id="slower" class="slower"><img src="img/player-icons/slower.svg" alt=""></button>
+                                <button id="faster" class="faster"><img src="img/player-icons/faster.svg" alt=""></button>
+                            </div>
+                            <div class="volume-slider">
+                                <input type="range" id="volume" class="volume"> <img src="img/player-icons/volume.svg" alt="">
+                            </div>
+                            <button id="fullscreen" class="fullscreen"><img src="img/player-icons/fullscreen.svg" alt=""></button>
+                        </div>
                     </div>
 
 
