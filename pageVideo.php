@@ -5,10 +5,11 @@
     <meta charset="utf-8" />
     <title>Video Wolf</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!-- <link rel="stylesheet" href="css/swiper.min.css" /> -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/player.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
     <link rel="shortcut icon" href="/img/site-logo.png" type="image/png" />
 </head>
 
@@ -85,19 +86,19 @@
                     <div class="swiper-slide">Slide 4</div>
                     <div class="swiper-slide">Slide 5</div>
                     <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
+                    <!-- <div class="swiper-slide">Slide 7</div>
                     <div class="swiper-slide">Slide 8</div>
                     <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+                    <div class="swiper-slide">Slide 10</div> -->
                 </div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
             </div>
             <div class="white-block f"></div>
             <div class="white-block s"></div>
         </div>
-
+        
     </main>
 
 
@@ -114,6 +115,7 @@
     <script src="js/swiper-init.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/player.js"></script>
 
     <script>
         $(document).ready(function() {

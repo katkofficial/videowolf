@@ -3,6 +3,7 @@
     bottom: -91px;
     display: none;
     transition: all ease-out 2s;
+    width:853px;
 }
 
 .video-container {
@@ -176,4 +177,14 @@ input[type=range] {
   }
   input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
+  }
+  .swiper-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center ;
+  }
+  .swiper-slide{
+    width: 300px;
+    margin-bottom: 20px;
+    cursor: pointer;
   }
